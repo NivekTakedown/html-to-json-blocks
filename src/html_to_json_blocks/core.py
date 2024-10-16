@@ -1,5 +1,5 @@
-from converters.base_converter import BaseConverter
-from transformers.image_transformer import ImageTransformer
+from .converters.base_converter import BaseConverter
+from .transformers.image_transformer import ImageTransformer
 
 class HtmlToJsonConverter:
     def __init__(self, image_transformer: ImageTransformer):

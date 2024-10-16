@@ -1,5 +1,5 @@
 from .base_converter import BaseConverter
-from transformers.default_image_transformer import DefaultImageTransformer
+from ..transformers.default_image_transformer import DefaultImageTransformer
 
 class DefaultConverter(BaseConverter):
     def __init__(self):

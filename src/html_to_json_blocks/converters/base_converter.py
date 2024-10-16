@@ -1,5 +1,5 @@
 from bs4 import NavigableString
-from transformers.image_transformer import  ImageTransformer
+from ..transformers.image_transformer import ImageTransformer
 
 class BaseConverter:
     def __init__(self):
