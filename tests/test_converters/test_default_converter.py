@@ -1,7 +1,6 @@
 import unittest
 from bs4 import BeautifulSoup
-from converters.default_converter import DefaultConverter
-
+from html_to_json_blocks.converters.default_converter import DefaultConverter
 
 class TestDefaultConverter(unittest.TestCase):
 
@@ -18,7 +17,6 @@ class TestDefaultConverter(unittest.TestCase):
             {"type": "heading", "children": [{"text": "Header", "type": "text"}], "level": 1, "size": "h1"}
         ]
         self.assertEqual(result, expected)
-
 
 if __name__ == '__main__':
     unittest.main()
