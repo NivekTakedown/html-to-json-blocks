@@ -1,8 +1,7 @@
 import unittest
 from bs4 import BeautifulSoup
 from datetime import datetime
-from transformers.default_image_transformer import DefaultImageTransformer
-
+from html_to_json_blocks.transformers.default_image_transformer import DefaultImageTransformer
 
 class TestDefaultImageTransformer(unittest.TestCase):
 
@@ -34,7 +33,6 @@ class TestDefaultImageTransformer(unittest.TestCase):
         result = self.image_transformer.transform_image(img_node, images_info)
         self.assertEqual(result['type'], 'image')
         self.assertEqual(result['children'][0]['type'], 'text')
-
 
 if __name__ == '__main__':
     unittest.main()
