@@ -7,14 +7,11 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='html-to-json-blocks',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
         'beautifulsoup4>=4.9.3',
-        'beautifulsoup4==4.9.3',
-        'pytest==6.2.5',
-        'pytest-cov==2.12.1',
     ],
     extras_require={
         'dev': [
@@ -27,12 +24,12 @@ setup(
             'html2json=html_to_json_blocks.cli:main',
         ],
     },
-    author='Your Name',
-    author_email='your.email@example.com',
+    author='Kevin Fabio Ramos López',
+    author_email='55922986+NivekTakedown@users.noreply.github.com',
     description='A library to convert HTML to JSON blocks',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/html-to-json-blocks',
+    url='https://github.com/NivekTakedown/html-to-json-blocks',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
