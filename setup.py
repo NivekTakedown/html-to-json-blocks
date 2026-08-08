@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='html-to-json-blocks',
-    version='0.1.1',
+    version='0.1.2',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
@@ -25,7 +25,7 @@ setup(
         ],
     },
     author='Kevin Fabio Ramos López',
-    author_email='55922986+NivekTakedown@users.noreply.github.com',
+    author_email='kevinframosl@gmail.com',
     description='A library to convert HTML to JSON blocks',
     long_description=long_description,
     long_description_content_type='text/markdown',
